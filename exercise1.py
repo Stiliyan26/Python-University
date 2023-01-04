@@ -6,7 +6,7 @@ def inputValidator(inputMsg, errMsg, isPositive):
         try:
             number = int(input(inputMsg))
             if isPositive:
-                if number <= -1:
+                if number <= 0:
                     raise Exception(errMsg)
                 return number
             return number
